@@ -52,7 +52,7 @@ func (s *DummyGroundService) Update(groundID uint64, ground autotransport.Ground
 		return nil
 	}
 
-	return fmt.Errorf("Invalid fileeds")
+	return fmt.Errorf("invalid fields")
 }
 
 func (s *DummyGroundService) Remove(groundID uint64) (bool, error) {

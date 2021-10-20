@@ -14,10 +14,10 @@ var allGrounds = []Ground{
 }
 
 type Ground struct {
-	Name        string
-	WheelsCount uint64
-	Color       string
-	MaxSpeed    uint64
+	Name        string `json:"name"`
+	WheelsCount uint64 `json:"wheels"`
+	Color       string `json:"color"`
+	MaxSpeed    uint64 `json:"speed"`
 }
 
 func (g Ground) String() string {

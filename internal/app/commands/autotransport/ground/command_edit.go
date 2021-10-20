@@ -39,6 +39,7 @@ func (c *GroundCommander) Edit(inputMessage *tgbotapi.Message) {
 	emptyGround := autotransport.Ground{}
 	err = json.Unmarshal([]byte(splitArgs[1]), &emptyGround)
 	if err != nil {
+		log.Printf("Internal error %v", err)
 		msgText = `Failed to parse ground.
 Format: {ID}, {"name":"{ground_name}", "wheels":{wheels_count}, "color":"{color}, "speed":{max_speed}}`
 		return
