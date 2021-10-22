@@ -13,8 +13,12 @@ type GroundService interface {
 	Remove(groundID uint64) (bool, error)
 
 	Count() uint64
+	InitEntities()
 }
 
 func NewAutotransportGroundService() GroundService {
-	return &ground.DummyGroundService{}
+	groundService := ground.DummyGroundService{}
+	groundService.InitEntities()
+
+	return &groundService
 }
