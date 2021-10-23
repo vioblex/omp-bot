@@ -4,7 +4,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-func (c *GroundCommander) Help(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) Help(inputMessage *tgbotapi.Message) {
 	c.Send(inputMessage.Chat.ID,
 		`
 /help__autotransport__ground — print list of commands

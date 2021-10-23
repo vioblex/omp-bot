@@ -20,7 +20,7 @@ type CallbackListData struct {
 	Limit  uint64 `json:"limit"`
 }
 
-func (c *GroundCommander) List(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) List(inputMessage *tgbotapi.Message) {
 	msgText := "All grounds: \n\n"
 
 	grounds, err := c.service.List(0, Limit)

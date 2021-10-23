@@ -11,7 +11,7 @@ import (
 	"github.com/ozonmp/omp-bot/internal/model/autotransport"
 )
 
-func (c *GroundCommander) Edit(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) Edit(inputMessage *tgbotapi.Message) {
 	var msgText string
 
 	defer func() {

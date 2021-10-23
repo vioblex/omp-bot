@@ -9,7 +9,7 @@ import (
 	"github.com/ozonmp/omp-bot/internal/app/path"
 )
 
-func (c *GroundCommander) CallbackList(callback *tgbotapi.CallbackQuery, callbackPath path.CallbackPath) {
+func (c *AutotransportGroundCommander) CallbackList(callback *tgbotapi.CallbackQuery, callbackPath path.CallbackPath) {
 	var msgText string
 	parsedData := CallbackListData{}
 	err := json.Unmarshal([]byte(callbackPath.CallbackData), &parsedData)

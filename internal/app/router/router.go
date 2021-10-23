@@ -4,7 +4,7 @@ import (
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
-	"github.com/ozonmp/omp-bot/internal/app/commands/autotransport"
+	"github.com/ozonmp/omp-bot/internal/app/commands/autotransport/ground"
 	"github.com/ozonmp/omp-bot/internal/app/commands/demo"
 	"github.com/ozonmp/omp-bot/internal/app/path"
 )
@@ -56,7 +56,7 @@ func NewRouter(
 		bot: bot,
 		// demoCommander
 		demoCommander: demo.NewDemoCommander(bot),
-		autotransport: autotransport.NewAutotransportCommander(bot),
+		autotransport: ground.NewGroundCommander(bot),
 		// user
 		// access
 		// buy

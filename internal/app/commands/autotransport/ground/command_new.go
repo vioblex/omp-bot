@@ -16,7 +16,7 @@ type groundRawData struct {
 	MaxSpeed    uint64 `json:"speed"`
 }
 
-func (c *GroundCommander) New(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) New(inputMessage *tgbotapi.Message) {
 	var msgText string
 
 	defer func() {

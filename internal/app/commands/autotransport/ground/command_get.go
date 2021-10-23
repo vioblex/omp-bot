@@ -8,7 +8,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-func (c *GroundCommander) Get(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) Get(inputMessage *tgbotapi.Message) {
 	var msgText string
 
 	defer func() {

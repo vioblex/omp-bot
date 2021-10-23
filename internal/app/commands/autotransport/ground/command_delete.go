@@ -8,7 +8,7 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-func (c *GroundCommander) Delete(inputMessage *tgbotapi.Message) {
+func (c *AutotransportGroundCommander) Delete(inputMessage *tgbotapi.Message) {
 	var msgText string
 
 	defer func() {
